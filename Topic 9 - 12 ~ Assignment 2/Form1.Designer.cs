@@ -67,6 +67,8 @@
             this.ttminus = new System.Windows.Forms.ToolTip(this.components);
             this.ttmultiply = new System.Windows.Forms.ToolTip(this.components);
             this.ttdivide = new System.Windows.Forms.ToolTip(this.components);
+            this.txtdisplay = new System.Windows.Forms.TextBox();
+            this.lsthistory = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // btnone
@@ -237,6 +239,7 @@
             this.btnequal.Text = "=";
             this.ttequal.SetToolTip(this.btnequal, "Equal");
             this.btnequal.UseVisualStyleBackColor = false;
+            this.btnequal.Click += new System.EventHandler(this.btnequal_Click);
             // 
             // btnplus
             // 
@@ -307,6 +310,7 @@
             this.btndelete.Text = "DEL";
             this.ttdelete.SetToolTip(this.btndelete, "Delete");
             this.btndelete.UseVisualStyleBackColor = false;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // btnclear
             // 
@@ -321,6 +325,7 @@
             this.btnclear.Text = "C";
             this.ttclear.SetToolTip(this.btnclear, "Clear");
             this.btnclear.UseVisualStyleBackColor = false;
+            this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
             // btnquit
             // 
@@ -335,6 +340,7 @@
             this.btnquit.Text = "QUIT";
             this.ttquit.SetToolTip(this.btnquit, "Quit");
             this.btnquit.UseVisualStyleBackColor = false;
+            this.btnquit.Click += new System.EventHandler(this.btnquit_Click);
             // 
             // ttquit
             // 
@@ -450,12 +456,37 @@
             this.ttdivide.ForeColor = System.Drawing.Color.Aqua;
             this.ttdivide.OwnerDraw = true;
             // 
+            // txtdisplay
+            // 
+            this.txtdisplay.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtdisplay.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdisplay.Location = new System.Drawing.Point(17, 69);
+            this.txtdisplay.Name = "txtdisplay";
+            this.txtdisplay.ReadOnly = true;
+            this.txtdisplay.Size = new System.Drawing.Size(369, 30);
+            this.txtdisplay.TabIndex = 19;
+            this.txtdisplay.Text = "0";
+            this.txtdisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lsthistory
+            // 
+            this.lsthistory.Font = new System.Drawing.Font("Javanese Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lsthistory.ForeColor = System.Drawing.Color.IndianRed;
+            this.lsthistory.HideSelection = false;
+            this.lsthistory.Location = new System.Drawing.Point(17, 12);
+            this.lsthistory.Name = "lsthistory";
+            this.lsthistory.Size = new System.Drawing.Size(179, 51);
+            this.lsthistory.TabIndex = 20;
+            this.lsthistory.UseCompatibleStateImageBehavior = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightPink;
             this.ClientSize = new System.Drawing.Size(398, 414);
+            this.Controls.Add(this.lsthistory);
+            this.Controls.Add(this.txtdisplay);
             this.Controls.Add(this.btnquit);
             this.Controls.Add(this.btnclear);
             this.Controls.Add(this.btndelete);
@@ -478,6 +509,7 @@
             this.Name = "MainForm";
             this.Text = "Calculator";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -521,6 +553,8 @@
         private System.Windows.Forms.ToolTip ttminus;
         private System.Windows.Forms.ToolTip ttmultiply;
         private System.Windows.Forms.ToolTip ttdivide;
+        private System.Windows.Forms.TextBox txtdisplay;
+        private System.Windows.Forms.ListView lsthistory;
     }
 }
 
