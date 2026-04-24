@@ -25,9 +25,93 @@ namespace Topic_9___12___Assignment_2
         private void btnquit_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Reconfirm if you want to quit", "Quit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void btnclear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnone_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btntwo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnthree_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnfour_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnfive_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnsix_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnseven_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btneight_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnnine_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnzero_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btndot_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnplus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnminus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnmultiply_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btndivide_Click(object sender, EventArgs e)
         {
 
         }
@@ -42,11 +126,13 @@ namespace Topic_9___12___Assignment_2
 
         }
 
-
-
-
-
-
-
     }
 }
+
+
+//Hard Version – Only do this if you are looking for a real challenge!
+//Make a calculator application that the user enters the numbers with the mouse by clicking on buttons,
+//like a real calculator. Exactly what features you add is up to you. There will be lot’s to consided:
+// How will your calculator know whether you are entering the first or second number?
+// How will it store the operation that was chosen?
+// What happens after you press equal?

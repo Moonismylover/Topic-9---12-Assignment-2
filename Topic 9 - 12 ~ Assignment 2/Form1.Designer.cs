@@ -84,6 +84,7 @@
             this.btnone.Text = "1";
             this.ttone.SetToolTip(this.btnone, "One");
             this.btnone.UseVisualStyleBackColor = false;
+            this.btnone.Click += new System.EventHandler(this.btnone_Click);
             // 
             // btntwo
             // 
@@ -98,6 +99,7 @@
             this.btntwo.Text = "2";
             this.tttwo.SetToolTip(this.btntwo, "Two");
             this.btntwo.UseVisualStyleBackColor = false;
+            this.btntwo.Click += new System.EventHandler(this.btntwo_Click);
             // 
             // btnthree
             // 
@@ -112,6 +114,7 @@
             this.btnthree.Text = "3";
             this.ttthree.SetToolTip(this.btnthree, "Three");
             this.btnthree.UseVisualStyleBackColor = false;
+            this.btnthree.Click += new System.EventHandler(this.btnthree_Click);
             // 
             // btnfour
             // 
@@ -126,6 +129,7 @@
             this.btnfour.Text = "4";
             this.ttfour.SetToolTip(this.btnfour, "Four");
             this.btnfour.UseVisualStyleBackColor = false;
+            this.btnfour.Click += new System.EventHandler(this.btnfour_Click);
             // 
             // btnfive
             // 
@@ -141,6 +145,7 @@
             this.btnfive.Text = "5";
             this.ttfive.SetToolTip(this.btnfive, "Five");
             this.btnfive.UseVisualStyleBackColor = false;
+            this.btnfive.Click += new System.EventHandler(this.btnfive_Click);
             // 
             // btnsix
             // 
@@ -155,6 +160,7 @@
             this.btnsix.Text = "6";
             this.ttsix.SetToolTip(this.btnsix, "Six");
             this.btnsix.UseVisualStyleBackColor = false;
+            this.btnsix.Click += new System.EventHandler(this.btnsix_Click);
             // 
             // btnseven
             // 
@@ -169,6 +175,7 @@
             this.btnseven.Text = "7";
             this.ttseven.SetToolTip(this.btnseven, "Seven");
             this.btnseven.UseVisualStyleBackColor = false;
+            this.btnseven.Click += new System.EventHandler(this.btnseven_Click);
             // 
             // btneight
             // 
@@ -183,6 +190,7 @@
             this.btneight.Text = "8";
             this.tteight.SetToolTip(this.btneight, "Eight");
             this.btneight.UseVisualStyleBackColor = false;
+            this.btneight.Click += new System.EventHandler(this.btneight_Click);
             // 
             // btnnine
             // 
@@ -197,6 +205,7 @@
             this.btnnine.Text = "9";
             this.ttnine.SetToolTip(this.btnnine, "Nine");
             this.btnnine.UseVisualStyleBackColor = false;
+            this.btnnine.Click += new System.EventHandler(this.btnnine_Click);
             // 
             // btnzero
             // 
@@ -211,6 +220,7 @@
             this.btnzero.Text = "0";
             this.ttzero.SetToolTip(this.btnzero, "Zero");
             this.btnzero.UseVisualStyleBackColor = false;
+            this.btnzero.Click += new System.EventHandler(this.btnzero_Click);
             // 
             // btndot
             // 
@@ -225,6 +235,7 @@
             this.btndot.Text = ".";
             this.ttdot.SetToolTip(this.btndot, "Decimal");
             this.btndot.UseVisualStyleBackColor = false;
+            this.btndot.Click += new System.EventHandler(this.btndot_Click);
             // 
             // btnequal
             // 
@@ -254,6 +265,7 @@
             this.btnplus.Text = "+";
             this.ttplus.SetToolTip(this.btnplus, "Add");
             this.btnplus.UseVisualStyleBackColor = false;
+            this.btnplus.Click += new System.EventHandler(this.btnplus_Click);
             // 
             // btnminus
             // 
@@ -268,6 +280,7 @@
             this.btnminus.Text = "-";
             this.ttminus.SetToolTip(this.btnminus, "Subtract");
             this.btnminus.UseVisualStyleBackColor = false;
+            this.btnminus.Click += new System.EventHandler(this.btnminus_Click);
             // 
             // btnmultiply
             // 
@@ -282,6 +295,7 @@
             this.btnmultiply.Text = "x";
             this.ttmultiply.SetToolTip(this.btnmultiply, "Multiply");
             this.btnmultiply.UseVisualStyleBackColor = false;
+            this.btnmultiply.Click += new System.EventHandler(this.btnmultiply_Click);
             // 
             // btndivide
             // 
@@ -296,6 +310,7 @@
             this.btndivide.Text = "/";
             this.ttdivide.SetToolTip(this.btndivide, "Divide");
             this.btndivide.UseVisualStyleBackColor = false;
+            this.btndivide.Click += new System.EventHandler(this.btndivide_Click);
             // 
             // btndelete
             // 
