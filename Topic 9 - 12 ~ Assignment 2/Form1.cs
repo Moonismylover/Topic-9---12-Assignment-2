@@ -12,7 +12,7 @@ namespace Topic_9___12___Assignment_2
 {
     public partial class MainForm : Form
     {
-
+        string sign;
         double firstNum, secondNum, result;
         bool enteredFirstNum = false;
         bool enteredSecondNum = false;
@@ -47,62 +47,152 @@ namespace Topic_9___12___Assignment_2
 
         private void btnone_Click(object sender, EventArgs e)
         {
-
+            if (enteredFirstNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out firstNum);
+                txtdisplay.Text += "1";
+            }
+            else if (enteredSecondNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out secondNum);
+                txtdisplay.Text += "1";
+            }
         }
 
         private void btntwo_Click(object sender, EventArgs e)
         {
-
+            if (enteredFirstNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out firstNum);
+                txtdisplay.Text += "2";
+            }
+            else if (enteredSecondNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out secondNum);
+                txtdisplay.Text += "2";
+            }
         }
 
         private void btnthree_Click(object sender, EventArgs e)
         {
-
+            if (enteredFirstNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out firstNum);
+                txtdisplay.Text += "3";
+            }
+            else if (enteredSecondNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out secondNum);
+                txtdisplay.Text += "3";
+            }
         }
 
         private void btnfour_Click(object sender, EventArgs e)
         {
-
+            if (enteredFirstNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out firstNum);
+                txtdisplay.Text += "4";
+            }
+            else if (enteredSecondNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out secondNum);
+                txtdisplay.Text += "4";
+            }
         }
 
         private void btnfive_Click(object sender, EventArgs e)
         {
-
+            if (enteredFirstNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out firstNum);
+                txtdisplay.Text += "5";
+            }
+            else if (enteredSecondNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out secondNum);
+                txtdisplay.Text += "5";
+            }
         }
 
         private void btnsix_Click(object sender, EventArgs e)
         {
-
+            if (enteredFirstNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out firstNum);
+                txtdisplay.Text += "6";
+            }
+            else if (enteredSecondNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out secondNum);
+                txtdisplay.Text += "6";
+            }
         }
 
         private void btnseven_Click(object sender, EventArgs e)
         {
-
+            if (enteredFirstNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out firstNum);
+                txtdisplay.Text += "7";
+            }
+            else if (enteredSecondNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out secondNum);
+                txtdisplay.Text += "7";
+            }
         }
 
         private void btneight_Click(object sender, EventArgs e)
         {
-
+            if (enteredFirstNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out firstNum);
+                txtdisplay.Text += "8";
+            }
+            else if (enteredSecondNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out secondNum);
+                txtdisplay.Text += "8";
+            }
         }
 
         private void btnnine_Click(object sender, EventArgs e)
         {
-
+            if (enteredFirstNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out firstNum);
+                txtdisplay.Text += "9";
+            }
+            else if (enteredSecondNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out secondNum);
+                txtdisplay.Text += "9";
+            }
         }
 
         private void btnzero_Click(object sender, EventArgs e)
         {
-
+            if (enteredFirstNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out firstNum);
+                txtdisplay.Text += "0";
+            }
+            else if (enteredSecondNum == false)
+            {
+                double.TryParse(txtdisplay.Text, out secondNum);
+                txtdisplay.Text += "0";
+            }
         }
 
         private void btndot_Click(object sender, EventArgs e)
         {
-
+            txtdisplay.Text += ".";
         }
 
         private void btnplus_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnminus_Click(object sender, EventArgs e)
