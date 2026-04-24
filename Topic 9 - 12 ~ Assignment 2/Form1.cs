@@ -13,7 +13,7 @@ namespace Topic_9___12___Assignment_2
     public partial class MainForm : Form
     {
 
-        double firstnum, secondnum, result;
+        double firstNum, secondNum, result;
         bool enteredFirstNum = false;
         bool enteredSecondNum = false;
 
@@ -24,9 +24,8 @@ namespace Topic_9___12___Assignment_2
 
         private void btnquit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Reconfirm if you want to quit", "Quit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if (DialogResult.Yes)
+            if (DialogResult.Yes == MessageBox.Show("Reconfirm if you want to quit", "Quit", MessageBoxButtons.YesNo))
             {
                 Application.Exit();
             }
@@ -38,7 +37,12 @@ namespace Topic_9___12___Assignment_2
 
         private void btnclear_Click(object sender, EventArgs e)
         {
-
+            txtdisplay.Text = "";
+            firstNum = 0;
+            secondNum = 0;
+            enteredFirstNum = false;
+            enteredSecondNum = false;
+            result = 0;
         }
 
         private void btnone_Click(object sender, EventArgs e)
@@ -118,7 +122,7 @@ namespace Topic_9___12___Assignment_2
 
         private void btndelete_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnequal_Click(object sender, EventArgs e)
