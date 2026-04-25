@@ -48,151 +48,131 @@ namespace Topic_9___12___Assignment_2
 
         private void btnone_Click(object sender, EventArgs e)
         {
-            txtdisplay.Text = "";
-            if (enteredFirstNum == false)
+            txtdisplay.Text += "1";
+            if (!enteredFirstNum)
             {
                 double.TryParse(txtdisplay.Text, out firstNum);
-                txtdisplay.Text += "1";
             }
-            else if (enteredSecondNum == false)
+            else
             {
                 double.TryParse(txtdisplay.Text, out secondNum);
-                txtdisplay.Text += "1";
             }
         }
 
         private void btntwo_Click(object sender, EventArgs e)
         {
-            txtdisplay.Text = "";
-            if (enteredFirstNum == false)
+            txtdisplay.Text += "2";
+            if (!enteredFirstNum)
             {
                 double.TryParse(txtdisplay.Text, out firstNum);
-                txtdisplay.Text += "2";
             }
-            else if (enteredSecondNum == false)
+            else 
             {
                 double.TryParse(txtdisplay.Text, out secondNum);
-                txtdisplay.Text += "2";
             }
         }
 
         private void btnthree_Click(object sender, EventArgs e)
         {
-            txtdisplay.Text = "";
-            if (enteredFirstNum == false)
+            txtdisplay.Text += "3";
+            if (!enteredFirstNum)
             {
                 double.TryParse(txtdisplay.Text, out firstNum);
-                txtdisplay.Text += "3";
             }
-            else if (enteredSecondNum == false)
+            else 
             {
                 double.TryParse(txtdisplay.Text, out secondNum);
-                txtdisplay.Text += "3";
             }
         }
 
         private void btnfour_Click(object sender, EventArgs e)
         {
-            txtdisplay.Text = "";
-            if (enteredFirstNum == false)
+            txtdisplay.Text = "4";
+            if (!enteredFirstNum)
             {
                 double.TryParse(txtdisplay.Text, out firstNum);
-                txtdisplay.Text += "4";
             }
-            else if (enteredSecondNum == false)
+            else 
             {
                 double.TryParse(txtdisplay.Text, out secondNum);
-                txtdisplay.Text += "4";
             }
         }
 
         private void btnfive_Click(object sender, EventArgs e)
         {
-            txtdisplay.Text = "";
-            if (enteredFirstNum == false)
+            txtdisplay.Text += "5";
+            if (!enteredFirstNum)
             {
                 double.TryParse(txtdisplay.Text, out firstNum);
-                txtdisplay.Text += "5";
             }
-            else if (enteredSecondNum == false)
+            else 
             {
                 double.TryParse(txtdisplay.Text, out secondNum);
-                txtdisplay.Text += "5";
             }
         }
 
         private void btnsix_Click(object sender, EventArgs e)
         {
-            txtdisplay.Text = "";
-            if (enteredFirstNum == false)
+            txtdisplay.Text += "6";
+            if (!enteredFirstNum)
             {
                 double.TryParse(txtdisplay.Text, out firstNum);
-                txtdisplay.Text += "6";
             }
-            else if (enteredSecondNum == false)
+            else 
             {
                 double.TryParse(txtdisplay.Text, out secondNum);
-                txtdisplay.Text += "6";
             }
         }
 
         private void btnseven_Click(object sender, EventArgs e)
         {
-            txtdisplay.Text = "";
-            if (enteredFirstNum == false)
+            txtdisplay.Text += "7";
+            if (!enteredFirstNum)
             {
                 double.TryParse(txtdisplay.Text, out firstNum);
-                txtdisplay.Text += "7";
             }
-            else if (enteredSecondNum == false)
+            else
             {
                 double.TryParse(txtdisplay.Text, out secondNum);
-                txtdisplay.Text += "7";
             }
         }
 
         private void btneight_Click(object sender, EventArgs e)
         {
-            txtdisplay.Text = "";
-            if (enteredFirstNum == false)
+            txtdisplay.Text += "8";
+            if (!enteredFirstNum)
             {
                 double.TryParse(txtdisplay.Text, out firstNum);
-                txtdisplay.Text += "8";
             }
-            else if (enteredSecondNum == false)
+            else 
             {
                 double.TryParse(txtdisplay.Text, out secondNum);
-                txtdisplay.Text += "8";
             }
         }
 
         private void btnnine_Click(object sender, EventArgs e)
         {
-            txtdisplay.Text = "";
-            if (enteredFirstNum == false)
+            txtdisplay.Text += "9";
+            if (!enteredFirstNum)
             {
                 double.TryParse(txtdisplay.Text, out firstNum);
-                txtdisplay.Text += "9";
             }
-            else if (enteredSecondNum == false)
+            else 
             {
                 double.TryParse(txtdisplay.Text, out secondNum);
-                txtdisplay.Text += "9";
             }
         }
 
         private void btnzero_Click(object sender, EventArgs e)
         {
-            txtdisplay.Text = "";
-            if (enteredFirstNum == false)
+            txtdisplay.Text += "0";
+            if (!enteredFirstNum)
             {
                 double.TryParse(txtdisplay.Text, out firstNum);
-                txtdisplay.Text += "0";
             }
-            else if (enteredSecondNum == false)
+            else 
             {
                 double.TryParse(txtdisplay.Text, out secondNum);
-                txtdisplay.Text += "0";
             }
         }
 
@@ -203,54 +183,58 @@ namespace Topic_9___12___Assignment_2
 
         private void btnplus_Click(object sender, EventArgs e)
         {
+            if (txtdisplay.Text == "")
+            {
+                MessageBox.Show("Enter a number first");
+                return;
+            }
+
             sign = "+";
             enteredFirstNum = true;
             enteredSecondNum = false;
-            txtdisplay.Text = "+";
-
-            if (!enteredFirstNum)
-            {
-                MessageBox.Show("Please enter a number first!", "Error", MessageBoxButtons.OK);
-            }
+            txtdisplay.Text = "";
         }
 
         private void btnminus_Click(object sender, EventArgs e)
         {
+            if (txtdisplay.Text == "")
+            {
+                MessageBox.Show("Enter a number first");
+                return;
+            }
+
             sign = "-";
             enteredFirstNum = true;
             enteredSecondNum = false;
-            txtdisplay.Text = "-";
-
-            if (!enteredFirstNum)
-            {
-                MessageBox.Show("Please enter a number first!", "Error", MessageBoxButtons.OK);
-            }
+            txtdisplay.Text = "";
         }
 
         private void btnmultiply_Click(object sender, EventArgs e)
         {
+            if (txtdisplay.Text == "")
+            {
+                MessageBox.Show("Enter a number first");
+                return;
+            }
+
             sign = "x";
             enteredFirstNum = true;
             enteredSecondNum = false;
-            txtdisplay.Text = "x";
-
-            if (!enteredFirstNum)
-            {
-                MessageBox.Show("Please enter a number first!", "Error", MessageBoxButtons.OK);
-            }
+            txtdisplay.Text = "";
         }
 
         private void btndivide_Click(object sender, EventArgs e)
         {
+            if (txtdisplay.Text == "")
+            {
+                MessageBox.Show("Enter a number first");
+                return;
+            }
+
             sign = "/";
             enteredFirstNum = true;
             enteredSecondNum = false;
-            txtdisplay.Text = "/";
-
-            if (!enteredFirstNum)
-            {
-                MessageBox.Show("Please enter a number first!", "Error", MessageBoxButtons.OK);
-            }
+            txtdisplay.Text = "";
         }
 
         private void btnequal_Click(object sender, EventArgs e)
